@@ -2,10 +2,12 @@ SHELL=/bin/bash
 .EXPORT_ALL_VARIABLES:
 .ONESHELL:
 .SHELLFLAGS = -uec
-.PHONY: default build clean \
-		get-platform-package \
-		execute-integration-tests
+.PHONY: default build \
+                build.tar.gz \
+                plan-qa \
+                clean
 
+COPY = cp
 RM = rm -rf
 S3CP = aws s3 cp
 SUB_MAKE = make -C 
@@ -21,10 +23,19 @@ build: build.tar.gz
 build.tar.gz:
 	aws s3 cp s3://${RELEASE_BUCKET}/$$(cat platform-version) build.tar.gz
 
+qa-plan:
+	tar -xvf build.tar.gz
+	${JQ_COMBINE} settings.json config/qa.json > build/settings.json
+	${COPY} metaschema.yml build
+	${SUB_MAKE} build plan
+
+uat-plan:
+	tar -xvf build.tar.gz
+	${JQ_COMBINE} settings.json config/uat.json > build/settings.json
+	${COPY} metaschema.yml build
+	${SUB_MAKE} build plan
+
 clean:
 	# remove each file or folder mentioned in the gitignore
 	${RM} $$(cat ./.gitignore)
 	for folder in ${CLEAN_DIRS}; do ${SUB_MAKE} $$folder clean; done
-
-execute-integration-tests: 
-	${SUB_MAKE} integration-tests execute

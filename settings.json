@@ -1,0 +1,38 @@
+{
+  "projectName": "ccna-int-ccna",
+  "featureFlags": [],
+  "networking": {
+    "vpcId": "vpc-049f54b9afd29e393",
+    "subnetIds": [
+      "subnet-01b22e85645f374f0",
+      "subnet-056b8494453500bdc"
+    ],
+    "ingressCIDRs": [
+      "10.0.0.0/8"
+    ]
+  },
+  "accountId": "362550720160",
+  "deployRoleARN": "arn:aws:iam::362550720160:role/ccna_intsrvc_nonprod_deployment_role",
+  "region": "us-west-2",
+  "drRegion": "us-east-1",
+  "tfState": {
+    "bucket": "tfstate.ccna-int.ccna.info",
+    "region": "us-west-2"
+  },
+  "kmsKey": "arn:aws:kms:us-west-2:362550720160:key/1f4dd8ef-3bca-4f5e-aaae-c039ee3a8cfd",
+  "drkmsKey": "arn:aws:kms:us-east-1:362550720160:key/3d718e09-819b-4331-9795-2cc633526354",
+  "testDataBucket": "test-data.ccna-int.ccna.info",
+  "applicationCode": "INT",
+  "applicationId": "UID000015224773",
+  "deployCloudFrontDistribution": false,
+  "auroraScaling": {
+    "autopause": true,
+    "minCapacity": 1,
+    "maxCapacity": 2,
+    "secondsUntilAutopause": 7200
+  },
+  "cognitoUserPool": {
+    "generate": false
+  },
+  "appSyncUserPoolAuth": false
+}

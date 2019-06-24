@@ -1,0 +1,12 @@
+{
+  "env": "qa",
+  "s3Suffix": "qa.ccna-int.ccna.info",
+  "logRetentionInDays": 7,
+  "readSideUsername": "read_side",
+  "readSidePassword": "testtest",
+  "deploySqlExec": true,
+  "deployCloudFrontDistribution": true,
+  "wafIpSet": [
+    "161.162.0.0/16"
+  ]
+}

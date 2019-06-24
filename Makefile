@@ -26,12 +26,14 @@ build.tar.gz:
 qa-plan:
 	tar -xvf build.tar.gz
 	${JQ_COMBINE} settings.json config/qa.json > build/settings.json
-	${SUB_MAKE} build plan
+#	cp jsonnet_MacOS build/jsonnet/jsonnet
+	${SUB_MAKE} build plan-platform
 
 uat-plan:
 	tar -xvf build.tar.gz
 	${JQ_COMBINE} settings.json config/uat.json > build/settings.json
-	${SUB_MAKE} build plan
+#	cp jsonnet_MacOS build/jsonnet/jsonnet
+	${SUB_MAKE} build plan-platform
 
 clean:
 	# remove each file or folder mentioned in the gitignore

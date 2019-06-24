@@ -26,13 +26,11 @@ build.tar.gz:
 qa-plan:
 	tar -xvf build.tar.gz
 	${JQ_COMBINE} settings.json config/qa.json > build/settings.json
-	${COPY} metaschema.yml build
 	${SUB_MAKE} build plan
 
 uat-plan:
 	tar -xvf build.tar.gz
 	${JQ_COMBINE} settings.json config/uat.json > build/settings.json
-	${COPY} metaschema.yml build
 	${SUB_MAKE} build plan
 
 clean:

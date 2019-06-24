@@ -1,0 +1,28 @@
+version: 0.2
+
+env:
+  variables:
+    RELEASE_BUCKET: release.ccna-int.deployment.ccna-int.ccna.info
+    BUILDER_IMAGE: 362550720160.dkr.ecr.us-west-2.amazonaws.com/int-build:1.0.3
+
+phases:
+  build:
+    commands:
+      - make -j -O build
+
+artifacts:
+  files:
+    - build.tar.gz
+    - metaschema.yml
+    - config/**/*
+    - settings.json
+    - buildspec-qa-plan.yml
+    - buildspec-qa-deploy.yml
+    - buildspec-uat-plan.yml
+    - buildspec-uat-deploy.yml
+    - buildspec-prod-plan.yml
+    - buildspec-prod-deploy.yml
+    - Makefile
+    - integration-tests/**/*
+    - metaschema/**/*
+    - build-metaschema.js

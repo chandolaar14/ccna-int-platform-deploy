@@ -2,7 +2,7 @@ version: 0.2
 
 env:
   variables:
-    RELEASE_BUCKET: release.ccna-int.deployment.ccna-int.ccna.info
+    RELEASE_BUCKET: release.ccna-int.deployment.ccna-int.ccna.info/platform
     BUILDER_IMAGE: 362550720160.dkr.ecr.us-west-2.amazonaws.com/int-build:1.0.3
 
 phases:

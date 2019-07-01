@@ -12,7 +12,7 @@ RM = rm -rf
 S3CP = aws s3 cp
 SUB_MAKE = make -C 
 JQ_COMBINE = jq -s '.[0] * .[1]'
-RELEASE_BUCKET ?= release.ccna-int.deployment.ccna-int.ccna.info
+RELEASE_BUCKET ?= release.ccna-int.deployment.ccna-int.ccna.info/platform
 
 
 default:
@@ -21,7 +21,7 @@ default:
 build: build.tar.gz
 
 build.tar.gz:
-	aws s3 cp s3://${RELEASE_BUCKET}/$$(cat platform-version) build.tar.gz
+	aws s3 cp s3://${RELEASE_BUCKET}/$$(cat platform-version)/build.tar.gz build.tar.gz
 
 qa-plan:
 	tar -xvf build.tar.gz

@@ -35,6 +35,12 @@ uat-plan:
 #	cp jsonnet_MacOS build/jsonnet/jsonnet
 	${SUB_MAKE} build plan-platform
 
+prod-plan:
+	tar -xvf build.tar.gz
+	${JQ_COMBINE} settings.json config/prod.json > build/settings.json
+#	cp jsonnet_MacOS build/jsonnet/jsonnet
+	${SUB_MAKE} build plan-platform
+
 qa-deploy:
 	tar -xvf build.tar.gz
 	${JQ_COMBINE} settings.json config/qa.json > build/settings.json
@@ -44,6 +50,12 @@ qa-deploy:
 uat-deploy:
 	tar -xvf build.tar.gz
 	${JQ_COMBINE} settings.json config/uat.json > build/settings.json
+#	cp jsonnet_MacOS build/jsonnet/jsonnet
+	${SUB_MAKE} build deploy-platform
+
+prod-deploy:
+	tar -xvf build.tar.gz
+	${JQ_COMBINE} settings.json config/prod.json > build/settings.json
 #	cp jsonnet_MacOS build/jsonnet/jsonnet
 	${SUB_MAKE} build deploy-platform
 

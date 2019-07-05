@@ -6,8 +6,7 @@
     "subnetIds": ["subnet-01b22e85645f374f0", "subnet-056b8494453500bdc"],
     "ingressCIDRs": ["10.0.0.0/8"]
   },
-  "accountId": "362550720160",
-  "deployRoleARN": "arn:aws:iam::362550720160:role/ccna_intsrvc_nonprod_deployment_role",
+
   "region": "us-west-2",
   "drRegion": "us-east-1",
   "tfState": {

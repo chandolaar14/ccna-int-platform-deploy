@@ -1,5 +1,7 @@
 {
   "env": "qa",
+  "accountId": "362550720160",
+  "deployRoleARN": "arn:aws:iam::362550720160:role/ccna_intsrvc_nonprod_deployment_role",
   "s3Suffix": "qa.ccna-int.ccna.info",
   "logRetentionInDays": 7,
   "readSideUsername": "read_side",

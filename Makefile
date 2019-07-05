@@ -14,7 +14,6 @@ SUB_MAKE = make -C
 JQ_COMBINE = jq -s '.[0] * .[1]'
 RELEASE_BUCKET ?= release.ccna-int.deployment.ccna-int.ccna.info/platform
 
-
 default:
 	echo "no default target"
 
@@ -26,38 +25,37 @@ build.tar.gz:
 qa-plan:
 	tar -xvf build.tar.gz
 	${JQ_COMBINE} settings.json config/qa.json > build/settings.json
-#	cp jsonnet_MacOS build/jsonnet/jsonnet
 	${SUB_MAKE} build plan-platform
 
 uat-plan:
 	tar -xvf build.tar.gz
 	${JQ_COMBINE} settings.json config/uat.json > build/settings.json
-#	cp jsonnet_MacOS build/jsonnet/jsonnet
 	${SUB_MAKE} build plan-platform
 
 prod-plan:
 	tar -xvf build.tar.gz
 	${JQ_COMBINE} settings.json config/prod.json > build/settings.json
-#	cp jsonnet_MacOS build/jsonnet/jsonnet
 	${SUB_MAKE} build plan-platform
 
 qa-deploy:
 	tar -xvf build.tar.gz
 	${JQ_COMBINE} settings.json config/qa.json > build/settings.json
-#	cp jsonnet_MacOS build/jsonnet/jsonnet
 	${SUB_MAKE} build deploy-platform
 
 uat-deploy:
 	tar -xvf build.tar.gz
 	${JQ_COMBINE} settings.json config/uat.json > build/settings.json
-#	cp jsonnet_MacOS build/jsonnet/jsonnet
 	${SUB_MAKE} build deploy-platform
 
 prod-deploy:
 	tar -xvf build.tar.gz
 	${JQ_COMBINE} settings.json config/prod.json > build/settings.json
-#	cp jsonnet_MacOS build/jsonnet/jsonnet
 	${SUB_MAKE} build deploy-platform
+
+verify:
+	make build
+	make qa-plan
+	make uat-plan
 
 clean:
 	# remove each file or folder mentioned in the gitignore

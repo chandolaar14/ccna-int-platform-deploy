@@ -57,6 +57,10 @@ verify:
 	make qa-plan
 	make uat-plan
 
+format:
+	# format json
+	find . -type f | egrep '.*\.json$$' | xargs npx prettier --write
+
 clean:
 	# remove each file or folder mentioned in the gitignore
 	${RM} $$(cat ./.gitignore)

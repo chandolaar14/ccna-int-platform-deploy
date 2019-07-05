@@ -1,14 +1,26 @@
 {
   "env": "prod",
+  "networking": {
+    "vpcId": "vpc-068d385f57f9d795d",
+    "subnetIds": [
+      "subnet-060a545f83d87780f",
+      "subnet-02637fab495277caf"
+    ]
+  },
+  "accountId": "855074921823",
+  "deployRoleARN": "arn:aws:iam::855074921823:role/ccna_intsrvc_prod_deployment_role",
+  "kmsKey": "arn:aws:kms:us-west-2:855074921823:key/0bf208bd-e85d-4ece-b7f9-20d96717b944",
+  "drkmsKey": "arn:aws:kms:us-east-1:855074921823:key/37915d83-4b8b-4fe2-a2c8-1d29993157e6",
   "s3Suffix": "prod.ccna-int.ccna.info",
   "logRetentionInDays": 7,
   "readSideUsername": "read_side",
   "readSidePassword": "testtest",
   "deploySqlExec": true,
-  "deployCloudFrontDistribution": true,
   "cloudFront": {
-    "generate": true,
-    "alternateDomainName": "prod.nonprod.int.coke.com"
+    "generate": true
+  },
+  "auroraScaling": {
+    "autopause": false
   },
   "wafIpSet": [
     "161.162.0.0/16"

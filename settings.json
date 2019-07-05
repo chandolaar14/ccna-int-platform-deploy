@@ -24,7 +24,10 @@
   "testDataBucket": "test-data.ccna-int.ccna.info",
   "applicationCode": "INT",
   "applicationId": "UID000015224773",
-  "deployCloudFrontDistribution": false,
+  "cloudFront": {
+    "generate": false,
+    "certificateArn": "arn:aws:acm:us-east-1:362550720160:certificate/6e0871e7-c552-4f43-a2aa-f003780d0608"
+  },
   "auroraScaling": {
     "autopause": true,
     "minCapacity": 1,

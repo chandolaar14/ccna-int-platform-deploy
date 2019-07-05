@@ -7,10 +7,7 @@ SHELL=/bin/bash
                 plan-qa \
                 clean
 
-COPY = cp
-RM = rm -rf
-S3CP = aws s3 cp
-SUB_MAKE = make -C 
+SUB_MAKE = make -C
 JQ_COMBINE = jq -s '.[0] * .[1]'
 RELEASE_BUCKET ?= release.ccna-int.deployment.ccna-int.ccna.info/platform
 
@@ -62,6 +59,4 @@ format:
 	find . -type f | egrep '.*\.json$$' | xargs npx prettier --write
 
 clean:
-	# remove each file or folder mentioned in the gitignore
-	${RM} $$(cat ./.gitignore)
-	for folder in ${CLEAN_DIRS}; do ${SUB_MAKE} $$folder clean; done
+	git clean -fdX

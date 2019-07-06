@@ -22,32 +22,32 @@ build.tar.gz:
 qa-plan:
 	tar -xvf build.tar.gz
 	${JQ_COMBINE} settings.json config/qa.json > build/settings.json
-	${SUB_MAKE} build plan-platform
+	${SUB_MAKE} build plan
 
 uat-plan:
 	tar -xvf build.tar.gz
 	${JQ_COMBINE} settings.json config/uat.json > build/settings.json
-	${SUB_MAKE} build plan-platform
+	${SUB_MAKE} build plan
 
 prod-plan:
 	tar -xvf build.tar.gz
 	${JQ_COMBINE} settings.json config/prod.json > build/settings.json
-	${SUB_MAKE} build plan-platform
+	${SUB_MAKE} build plan
 
 qa-deploy:
 	tar -xvf build.tar.gz
 	${JQ_COMBINE} settings.json config/qa.json > build/settings.json
-	${SUB_MAKE} build deploy-platform
+	${SUB_MAKE} build deploy
 
 uat-deploy:
 	tar -xvf build.tar.gz
 	${JQ_COMBINE} settings.json config/uat.json > build/settings.json
-	${SUB_MAKE} build deploy-platform
+	${SUB_MAKE} build deploy
 
 prod-deploy:
 	tar -xvf build.tar.gz
 	${JQ_COMBINE} settings.json config/prod.json > build/settings.json
-	${SUB_MAKE} build deploy-platform
+	${SUB_MAKE} build deploy
 
 verify:
 	make build

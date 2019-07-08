@@ -12,5 +12,8 @@
     "alternateDomainName": "uat.nonprod.int.coke.com"
   },
   "wafIpSet": ["161.162.0.0/16"],
-  "deployAlertSqs": false
+  "deployAlertSqs": false,
+  "featureFlags": [
+    "gatewaySchedulerEvents"
+  ]
 }

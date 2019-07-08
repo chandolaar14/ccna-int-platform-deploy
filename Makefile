@@ -16,7 +16,7 @@ default:
 
 build: build.tar.gz
 
-build.tar.gz:
+build.tar.gz: platform-version
 	aws s3 cp s3://${RELEASE_BUCKET}/$$(cat platform-version)/build.tar.gz build.tar.gz
 
 qa-plan:

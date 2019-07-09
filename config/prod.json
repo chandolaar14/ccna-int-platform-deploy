@@ -5,6 +5,9 @@
     "subnetIds": [
       "subnet-060a545f83d87780f",
       "subnet-02637fab495277caf"
+    ],
+    "ingressCIDRs": [
+      "10.0.0.0/8"
     ]
   },
   "accountId": "855074921823",

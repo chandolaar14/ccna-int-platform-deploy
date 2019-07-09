@@ -1,26 +1,17 @@
 {
   "projectName": "ccna-int-ccna",
   "featureFlags": [],
-  "networking": {
-    "vpcId": "vpc-049f54b9afd29e393",
-    "subnetIds": ["subnet-01b22e85645f374f0", "subnet-056b8494453500bdc"],
-    "ingressCIDRs": ["10.0.0.0/8"]
-  },
-
   "region": "us-west-2",
   "drRegion": "us-east-1",
   "tfState": {
     "bucket": "tfstate.ccna-int.ccna.info",
     "region": "us-west-2"
   },
-  "kmsKey": "arn:aws:kms:us-west-2:362550720160:key/1f4dd8ef-3bca-4f5e-aaae-c039ee3a8cfd",
-  "drkmsKey": "arn:aws:kms:us-east-1:362550720160:key/3d718e09-819b-4331-9795-2cc633526354",
   "testDataBucket": "test-data.ccna-int.ccna.info",
   "applicationCode": "INT",
   "applicationId": "UID000015224773",
   "cloudFront": {
-    "generate": false,
-    "certificateArn": "arn:aws:acm:us-east-1:362550720160:certificate/6e0871e7-c552-4f43-a2aa-f003780d0608"
+    "generate": false
   },
   "auroraScaling": {
     "autopause": true,

@@ -19,7 +19,7 @@
   "cloudFront": {
     "generate": true,
     "alternateDomainName": "int.coke.com",
-    "certificateArn": "xxx"
+    "certificateArn": "arn:aws:acm:us-east-1:855074921823:certificate/1e1fe25c-10a5-4b2b-aa4d-cd25bead3941"
   },
   "auroraScaling": {
     "autopause": false

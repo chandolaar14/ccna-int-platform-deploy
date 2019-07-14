@@ -8,6 +8,8 @@
       "subnet-01b22e85645f374f0",
       "subnet-056b8494453500bdc"
     ],
+    "drVpcId": "vpc-0c157dd52ebe5c255",
+    "drSubnetIds": ["subnet-0e53ec6e8931f99c0", "subnet-00fc86a519122c0e1"],
     "ingressCIDRs": [
       "10.0.0.0/8"
     ]

@@ -1,5 +1,6 @@
 {
   "env": "uat",
+  "production": false,
   "accountId": "362550720160",
   "deployRoleARN": "arn:aws:iam::362550720160:role/ccna_intsrvc_nonprod_deployment_role",
   "networking": {

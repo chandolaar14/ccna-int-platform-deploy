@@ -1,5 +1,6 @@
 {
   "projectName": "ccna-int-ccna",
+  "production": false,
   "featureFlags": [],
   "region": "us-west-2",
   "drRegion": "us-east-1",

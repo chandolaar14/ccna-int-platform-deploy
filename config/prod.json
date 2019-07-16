@@ -6,8 +6,8 @@
       "subnet-060a545f83d87780f",
       "subnet-02637fab495277caf"
     ],
-    "drVpcId": "vpc-068d385f57f9d795d",
-    "drSubnetIds": ["subnet-02637fab495277caf", "subnet-060a545f83d87780f"],
+    "drVpcId": "vpc-02ac98270717f1b48",
+    "drSubnetIds": ["subnet-0ad36ceadc132cc7b", "subnet-09f137f1758312741"],
     "ingressCIDRs": [
       "10.0.0.0/8"
     ]

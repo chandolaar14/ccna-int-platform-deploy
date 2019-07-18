@@ -28,9 +28,6 @@
     "alternateDomainName": "qa.nonprod.int.coke.com",
     "certificateArn": "arn:aws:acm:us-east-1:362550720160:certificate/6e0871e7-c552-4f43-a2aa-f003780d0608"
   },
-  "auroraScaling": {
-    "autopause": false
-  },
   "wafIpSet": [
     "161.162.0.0/16"
   ],

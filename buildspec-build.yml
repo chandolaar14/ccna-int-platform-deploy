@@ -3,7 +3,6 @@ version: 0.2
 env:
   variables:
     RELEASE_BUCKET: release.ccna-int.deployment.ccna-int.ccna.info/platform
-    BUILDER_IMAGE: 362550720160.dkr.ecr.us-west-2.amazonaws.com/int-build:1.0.3
 
 phases:
   build:
@@ -12,10 +11,11 @@ phases:
 
 artifacts:
   files:
-    - build.tar.gz
-    - metaschema.yml
+    - storage.tar.gz
+    - core.tar.gz
+    - api.tar.gz
     - config/**/*
-    - settings.json
+    - project-settings.json
     - buildspec-qa-plan.yml
     - buildspec-qa-deploy.yml
     - buildspec-uat-plan.yml
@@ -23,6 +23,3 @@ artifacts:
     - buildspec-prod-plan.yml
     - buildspec-prod-deploy.yml
     - Makefile
-    - integration-tests/**/*
-    - metaschema/**/*
-    - build-metaschema.js

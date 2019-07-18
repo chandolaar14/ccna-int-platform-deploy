@@ -26,11 +26,14 @@ define unzip
 	mkdir -p $1 && ${UNTAR} $1.tar.gz -C $1 --strip-components=1
 endef
 
+define create-setting
+	jq -s ".[0] * .[1] + {\"featureFlags\":([] + .[0].featureFlags + .[2].$2.features)}" project-settings.json config/$1.json > $2/settings.json
+endef
+
 define create-settings
-	${JQ_COMBINE} project-settings.json config/$1.json > settings.json
-	${CP} settings.json storage/settings.json
-	${CP} settings.json core/settings.json
-	${CP} settings.json api/settings.json
+	$(call create-setting,$1,storage)
+	$(call create-setting,$1,core)
+	$(call create-setting,$1,api)
 endef
 
 define exec

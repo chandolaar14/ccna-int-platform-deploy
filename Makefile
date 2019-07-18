@@ -3,60 +3,86 @@ SHELL=/bin/bash
 .ONESHELL:
 .SHELLFLAGS = -uec
 .PHONY: default build \
-                build.tar.gz \
-                plan-qa \
-                clean
+		storage.tar.gz core.tar.gz api.tar.gz \
+		qa-plan uat-plan prod-plan \
+		qa-deploy uat-deploy prod-deploy \
+        clean
 
 SUB_MAKE = make -C
 JQ_COMBINE = jq -s '.[0] * .[1]'
+UNTAR = tar -xvf
 RELEASE_BUCKET ?= release.ccna-int.deployment.ccna-int.ccna.info/platform
+CP = cp
 
 default:
 	echo "no default target"
 
-build: build.tar.gz
+define get-platform-version
+    version=$$(jq -r ".$1.version" platform-version.json)
+	aws s3 cp s3://${RELEASE_BUCKET}/$$version/build.tar.gz $1.tar.gz
+endef
 
-build.tar.gz: platform-version
-	aws s3 cp s3://${RELEASE_BUCKET}/$$(cat platform-version)/build.tar.gz build.tar.gz
+define unzip
+	mkdir -p $1 && ${UNTAR} $1.tar.gz -C $1 --strip-components=1
+endef
+
+define create-settings
+	${JQ_COMBINE} project-settings.json config/$1.json > settings.json
+	${CP} settings.json storage/settings.json
+	${CP} settings.json core/settings.json
+	${CP} settings.json api/settings.json
+endef
+
+define exec
+	${SUB_MAKE} storage $1
+	${SUB_MAKE} core $1
+	${SUB_MAKE} api $1
+endef
+
+define go
+	$(call unzip,storage)
+	$(call unzip,core)
+	$(call unzip,api)
+	$(call create-settings,$1)
+	$(call exec,$2)
+endef
+
+build: storage.tar.gz core.tar.gz api.tar.gz
+
+storage.tar.gz: platform-version.json
+	$(call get-platform-version,storage)
+
+core.tar.gz: platform-version.json
+	$(call get-platform-version,core)
+
+api.tar.gz: platform-version.json
+	$(call get-platform-version,api)
 
 qa-plan:
-	tar -xvf build.tar.gz
-	${JQ_COMBINE} settings.json config/qa.json > build/settings.json
-	${SUB_MAKE} build plan
+	$(call go,qa,plan)
 
 uat-plan:
-	tar -xvf build.tar.gz
-	${JQ_COMBINE} settings.json config/uat.json > build/settings.json
-	${SUB_MAKE} build plan
+	$(call go,uat,plan)
 
 prod-plan:
-	tar -xvf build.tar.gz
-	${JQ_COMBINE} settings.json config/prod.json > build/settings.json
-	${SUB_MAKE} build plan
+	$(call go,prod,plan)
 
 qa-deploy:
-	tar -xvf build.tar.gz
-	${JQ_COMBINE} settings.json config/qa.json > build/settings.json
-	${SUB_MAKE} build deploy
+	$(call go,qa,deploy)
 
 uat-deploy:
-	tar -xvf build.tar.gz
-	${JQ_COMBINE} settings.json config/uat.json > build/settings.json
-	${SUB_MAKE} build deploy
+	$(call go,uat,deploy)
 
 prod-deploy:
-	tar -xvf build.tar.gz
-	${JQ_COMBINE} settings.json config/prod.json > build/settings.json
-	${SUB_MAKE} build deploy
+	$(call go,prod,deploy)
 
-verify:
-	make build
-	make qa-plan
-	make uat-plan
+verify: build
+	$(call go,qa,plan)
+	$(call go,uat,plan)
 
 format:
 	# format json
 	find . -type f | egrep '.*\.json$$' | xargs npx prettier --write
 
 clean:
-	git clean -fdX
+

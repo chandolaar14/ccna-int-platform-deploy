@@ -1,7 +1,9 @@
 {
   "projectName": "ccna-int-ccna",
   "production": false,
-  "featureFlags": [],
+  "featureFlags": [
+    "gatewaySchedulerEvents"
+  ],
   "region": "us-west-2",
   "drRegion": "us-east-1",
   "tfState": {
@@ -12,7 +14,9 @@
   "applicationCode": "INT",
   "applicationId": "UID000015224773",
   "cloudFront": {
-    "generate": false
+    "generate": true,
+    "alternateDomainName": "qa.nonprod.int.coke.com",
+    "certificateArn": "arn:aws:acm:us-east-1:362550720160:certificate/6e0871e7-c552-4f43-a2aa-f003780d0608"
   },
   "auroraScaling": {
     "autopause": true,
@@ -21,7 +25,40 @@
     "secondsUntilAutopause": 7200
   },
   "cognitoUserPool": {
-    "generate": false
+    "generate": true,
+    "providerDetail": {
+      "metadataUrl": "https://login.microsoftonline.com/eb36d020-2c35-44de-bc7a-554cc979b26d/federationmetadata/2007-06/federationmetadata.xml"
+    }
   },
-  "appSyncUserPoolAuth": false
+  "appSyncUserPoolAuth": false,
+  "env": "qa",
+  "accountId": "362550720160",
+  "deployRoleARN": "arn:aws:iam::362550720160:role/ccna_intsrvc_nonprod_deployment_role",
+  "networking": {
+    "vpcId": "vpc-049f54b9afd29e393",
+    "subnetIds": [
+      "subnet-01b22e85645f374f0",
+      "subnet-056b8494453500bdc"
+    ],
+    "drVpcId": "vpc-0c157dd52ebe5c255",
+    "drSubnetIds": [
+      "subnet-0e53ec6e8931f99c0",
+      "subnet-00fc86a519122c0e1"
+    ],
+    "ingressCIDRs": [
+      "10.0.0.0/8"
+    ]
+  },
+  "kmsKey": "arn:aws:kms:us-west-2:362550720160:key/1f4dd8ef-3bca-4f5e-aaae-c039ee3a8cfd",
+  "drkmsKey": "arn:aws:kms:us-east-1:362550720160:key/3d718e09-819b-4331-9795-2cc633526354",
+  "s3Suffix": "qa.ccna-int.ccna.info",
+  "logRetentionInDays": 7,
+  "readSideUsername": "read_side",
+  "readSidePassword": "testtest",
+  "deploySqlExec": true,
+  "deployCloudFrontDistribution": true,
+  "wafIpSet": [
+    "161.162.0.0/16"
+  ],
+  "deployAlertSqs": false
 }

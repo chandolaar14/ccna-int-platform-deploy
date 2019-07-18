@@ -1,0 +1,27 @@
+{
+  "projectName": "ccna-int-ccna",
+  "production": false,
+  "featureFlags": [],
+  "region": "us-west-2",
+  "drRegion": "us-east-1",
+  "tfState": {
+    "bucket": "tfstate.ccna-int.ccna.info",
+    "region": "us-west-2"
+  },
+  "testDataBucket": "test-data.ccna-int.ccna.info",
+  "applicationCode": "INT",
+  "applicationId": "UID000015224773",
+  "cloudFront": {
+    "generate": false
+  },
+  "auroraScaling": {
+    "autopause": true,
+    "minCapacity": 1,
+    "maxCapacity": 2,
+    "secondsUntilAutopause": 7200
+  },
+  "cognitoUserPool": {
+    "generate": false
+  },
+  "appSyncUserPoolAuth": false
+}

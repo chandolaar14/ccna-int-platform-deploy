@@ -1,0 +1,14 @@
+{
+  "storage": {
+    "version": "1.1.117",
+    "features": []
+  },
+  "core": {
+    "version": "1.1.117",
+    "features": []
+  },
+  "api": {
+    "version": "1.1.117",
+    "features": []
+  }
+}

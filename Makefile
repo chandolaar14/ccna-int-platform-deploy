@@ -85,4 +85,4 @@ format:
 	find . -type f | egrep '.*\.json$$' | xargs npx prettier --write
 
 clean:
-
+	git clean -fdX

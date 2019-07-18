@@ -5,3 +5,9 @@ phases:
     commands:
       - make prod-plan
 
+artifacts:
+  files:
+    - build/infrastructure/api-primary/plan.txt
+    - build/infrastructure/core-primary/plan.txt
+    - build/infrastructure/core-secondary/plan.txt
+    - build/infrastructure/storage/plan.txt

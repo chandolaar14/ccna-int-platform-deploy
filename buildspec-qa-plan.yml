@@ -7,7 +7,7 @@ phases:
 
 artifacts:
   files:
-    - build/infrastructure/api-primary/plan.txt
-    - build/infrastructure/core-primary/plan.txt
-    - build/infrastructure/core-secondary/plan.txt
-    - build/infrastructure/storage/plan.txt
+    - storage/infrastructure/storage/plan.txt
+    - core/infrastructure/core-primary/plan.txt
+    - core/infrastructure/core-secondary/plan.txt
+    - api/infrastructure/api-primary/plan.txt

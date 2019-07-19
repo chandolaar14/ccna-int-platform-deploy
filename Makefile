@@ -37,9 +37,9 @@ define create-settings
 endef
 
 define exec
-	${SUB_MAKE} storage $1
-	${SUB_MAKE} core $1
-	${SUB_MAKE} api $1
+	${SUB_MAKE} storage $1-storage
+	${SUB_MAKE} core $1-core
+	${SUB_MAKE} api $1-api
 endef
 
 define go

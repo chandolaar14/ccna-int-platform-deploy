@@ -22,4 +22,5 @@ artifacts:
     - buildspec-uat-deploy.yml
     - buildspec-prod-plan.yml
     - buildspec-prod-deploy.yml
+    - platform-version.json
     - Makefile

@@ -27,7 +27,7 @@ define unzip
 endef
 
 define create-setting
-	jq -s ".[0] * .[1] + {\"featureFlags\":([] + .[0].featureFlags + .[2].$2.features)}" project-settings.json config/$1.json > $2/settings.json
+	jq -s ".[0] * .[1] * .[2] + {\"featureFlags\":([] + .[0].featureFlags + .[3].$2.features)}" project-settings.json config/$1.json config/$1-$2.json platform-version.json > $2/settings.json
 endef
 
 define create-settings

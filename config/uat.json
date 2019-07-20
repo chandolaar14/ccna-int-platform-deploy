@@ -13,7 +13,7 @@
       "vpc": "ccna-int-account-infrastructure-nonprod-vpc",
       "readSideWrite": "ccna-int-account-infrastructure-nonprod-read-side-write",
       "readSideDB": "ccna-int-account-infrastructure-nonprod-read-side-db"
-    }
+    },
     "drVpcId": "vpc-0c157dd52ebe5c255",
     "drSubnetIds": ["subnet-0e53ec6e8931f99c0", "subnet-00fc86a519122c0e1"],
     "ingressCIDRs": [

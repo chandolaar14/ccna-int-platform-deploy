@@ -1,7 +1,7 @@
 {
   "projectName": "ccna-int-ccna",
   "production": false,
-  "featureFlags": [],
+  "featureFlags": ["gatewaySchedulerEvents"],
   "region": "us-west-2",
   "drRegion": "us-east-1",
   "tfState": {

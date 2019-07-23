@@ -22,5 +22,5 @@
   },
   "cognitoUserPool": {
     "generate": false
-  },
+  }
 }

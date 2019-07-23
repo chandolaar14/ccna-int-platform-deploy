@@ -2,9 +2,9 @@
   "env": "prod",
   "networking": {
     "vpcId": "vpc-068d385f57f9d795d",
-    "subnetIds": ["subnet-060a545f83d87780f", "subnet-02637fab495277caf"],
+    "subnetIds": ["subnet-060a545f83d87780f", "subnet-02637fab495277caf", "subnet-0b9801a17c251d997", "subnet-0f500656f1df608cd"],
     "drVpcId": "vpc-02ac98270717f1b48",
-    "drSubnetIds": ["subnet-0ad36ceadc132cc7b", "subnet-09f137f1758312741"],
+    "drSubnetIds": ["subnet-0ad36ceadc132cc7b", "subnet-09f137f1758312741", "subnet-0efc7c0978d86c557", "subnet-0f9de35cd5abf1110"],
     "ingressCIDRs": ["10.0.0.0/8"]
   },
   "accountId": "855074921823",

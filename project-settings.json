@@ -22,6 +22,5 @@
   },
   "cognitoUserPool": {
     "generate": false
-  },
-  "appSyncUserPoolAuth": false
+  }
 }

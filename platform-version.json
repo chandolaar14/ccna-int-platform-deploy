@@ -5,12 +5,10 @@
   },
   "core": {
     "version": "1.1.167",
-    "features": [
-      "enableLogBucket",
-    ],
+    "features": ["enableLogBucket"]
   },
   "api": {
     "version": "1.1.167",
-    "features": [],
+    "features": []
   }
 }

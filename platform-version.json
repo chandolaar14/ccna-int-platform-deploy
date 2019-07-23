@@ -1,14 +1,17 @@
 {
   "storage": {
-    "version": "1.1.144",
+    "version": "1.1.167",
     "features": []
   },
   "core": {
-    "version": "1.1.152",
-    "features": []
+    "version": "1.1.167",
+    "features": [
+      "enableLogBucket",
+      "enableDLQRetries",
+    ],
   },
   "api": {
-    "version": "1.1.157",
-    "features": []
+    "version": "1.1.167",
+    "features": [],
   }
 }

@@ -1,6 +1,11 @@
 {
   "env": "prod",
   "networking": {
+    "securityGroups": {
+      "vpc": "ccna-int-account-infrastructure-prod-vpc",
+      "readSideWrite": "ccna-int-account-infrastructure-prod-read-side-write",
+      "readSideDB": "ccna-int-account-infrastructure-prod-read-side-db"
+    },
     "vpcId": "vpc-068d385f57f9d795d",
     "subnetIds": [
       "subnet-060a545f83d87780f",

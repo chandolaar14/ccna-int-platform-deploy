@@ -1,7 +1,1 @@
-{
-  "securityGroups": {
-    "vpc": "ccna-int-account-infrastructure-prod-vpc",
-    "readSideWrite": "ccna-int-account-infrastructure-prod-read-side-write",
-    "readSideDB": "ccna-int-account-infrastructure-prod-read-side-db"
-  }
-}
+{}

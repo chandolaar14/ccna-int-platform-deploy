@@ -18,7 +18,12 @@
       "subnet-017b80fdd9437d81b",
       "subnet-09218eafb7ca721a9"
     ],
-    "ingressCIDRs": ["10.0.0.0/8"]
+    "ingressCIDRs": ["10.0.0.0/8"],
+    "securityGroups": {
+      "vpc": "ccna-int-account-infrastructure-nonprod-vpc",
+      "readSideWrite": "ccna-int-account-infrastructure-nonprod-read-side-write",
+      "readSideDB": "ccna-int-account-infrastructure-nonprod-read-side-db"
+    }
   },
   "kmsKey": "arn:aws:kms:us-west-2:362550720160:key/1f4dd8ef-3bca-4f5e-aaae-c039ee3a8cfd",
   "drkmsKey": "arn:aws:kms:us-east-1:362550720160:key/3d718e09-819b-4331-9795-2cc633526354",

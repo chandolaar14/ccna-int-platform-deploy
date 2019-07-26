@@ -46,7 +46,6 @@
   },
   "deployAlertSqs": false,
   "featureFlags": [
-    "gatewaySchedulerEvents",
     "enableSFTPEndpointSSH"
   ]
 }

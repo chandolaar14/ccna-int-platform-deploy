@@ -8,10 +8,11 @@
     "features": ["enableLogBucket"]
   },
   "api": {
-    "version": "1.1.175",
+    "version": "1.1.186",
     "features": [
       "enableLogBucket",
-      "readSideDataApi"
+      "readSideDataApi",
+      "appSyncCognitoAuth"
     ]
   }
 }

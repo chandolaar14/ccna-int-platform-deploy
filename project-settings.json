@@ -65,9 +65,9 @@
       "IteratorAge": {
         "statistic": "Average",
         "operator": "GreaterThanOrEqualToThreshold",
-        "threshold": 1000,
+        "threshold": 2000,
         "period": 60,
-        "evaluationPeriods": 2
+        "evaluationPeriods": 3
       }
     },
     "AWS/SQS": {

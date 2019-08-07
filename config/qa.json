@@ -7,16 +7,12 @@
     "vpcId": "vpc-049f54b9afd29e393",
     "subnetIds": [
       "subnet-01b22e85645f374f0",
-      "subnet-056b8494453500bdc",
-      "subnet-0351cb86d512efefd",
-      "subnet-0779c81a49b38053e"
+      "subnet-056b8494453500bdc"
     ],
     "drVpcId": "vpc-0c157dd52ebe5c255",
     "drSubnetIds": [
       "subnet-0e53ec6e8931f99c0",
-      "subnet-00fc86a519122c0e1",
-      "subnet-017b80fdd9437d81b",
-      "subnet-09218eafb7ca721a9"
+      "subnet-00fc86a519122c0e1"
     ],
     "ingressCIDRs": ["10.0.0.0/8"],
     "securityGroups": {

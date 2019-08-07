@@ -4,15 +4,16 @@
     "features": ["enableLogBucket", "createInfraSecondRegion"]
   },
   "core": {
-    "version": "1.1.220",
-    "features": ["enableLogBucket"]
+    "version": "1.1.223",
+    "features": ["enableLogBucket", "createInfraSecondRegion"]
   },
   "api": {
-    "version": "1.1.220",
+    "version": "1.1.223",
     "features": [
       "enableLogBucket",
       "readSideDataApi",
-      "appSyncCognitoAuth"
+      "appSyncCognitoAuth",
+      "createInfraSecondRegion"
     ]
   }
 }

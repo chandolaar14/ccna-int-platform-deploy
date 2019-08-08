@@ -8,6 +8,8 @@ SHELL=/bin/bash
 		qa-deploy uat-deploy prod-deploy \
         clean
 
+PROJECT_NAME = ccna-int-platform-deploy
+
 SUB_MAKE = make -C
 JQ_COMBINE = jq -s '.[0] * .[1]'
 UNTAR = tar -xvf
@@ -87,6 +89,9 @@ verify: build
 format:
 	# format json
 	find . -type f | egrep '.*\.json$$' | xargs npx prettier --write
+
+open-pipeline:
+	open "https://us-west-2.console.aws.amazon.com/codesuite/codepipeline/pipelines/$(PROJECT_NAME)/view?region=us-west-2"
 
 clean:
 	git clean -fdX

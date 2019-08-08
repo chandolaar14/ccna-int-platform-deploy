@@ -18,7 +18,8 @@ default:
 	echo "no default target"
 
 define get-platform-version
-    version=$$(jq -r ".$1.version" platform-version.json)
+	version=$$(jq -r ".$1.version" platform-version.json)
+	echo "version=[$$version] setting=[layer=$1]"
 	aws s3 cp s3://${RELEASE_BUCKET}/$$version/build.tar.gz $1.tar.gz
 endef
 

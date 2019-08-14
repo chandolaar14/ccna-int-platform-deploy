@@ -8,7 +8,8 @@
     "features": [
       "enableLogBucket",
       "createInfraSecondRegion",
-      "httpGateway"
+      "httpGateway",
+      "enableDLQRetries"
     ]
   },
   "api": {
@@ -17,7 +18,8 @@
       "enableLogBucket",
       "readSideDataApi",
       "appSyncCognitoAuth",
-      "createInfraSecondRegion"
+      "createInfraSecondRegion",
+      "enableDLQRetries"
     ]
   }
 }

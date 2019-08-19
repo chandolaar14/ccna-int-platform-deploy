@@ -3,6 +3,7 @@
   "networking": {
     "securityGroups": {
       "vpc": "ccna-int-account-infrastructure-prod-vpc",
+      "httpGateway": "ccna-int-account-infrastructure-prod-http_gateway",
       "readSideWrite": "ccna-int-account-infrastructure-prod-read-side-write",
       "readSideDB": "ccna-int-account-infrastructure-prod-read-side-db"
     },

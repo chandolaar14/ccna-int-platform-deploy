@@ -23,6 +23,7 @@
     ],
     "securityGroups": {
       "vpc": "ccna-int-account-infrastructure-nonprod-vpc",
+      "httpGateway": "ccna-int-account-infrastructure-nonprod-http_gateway",
       "readSideWrite": "ccna-int-account-infrastructure-nonprod-read-side-write",
       "readSideDB": "ccna-int-account-infrastructure-nonprod-read-side-db"
     }

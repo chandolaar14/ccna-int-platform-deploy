@@ -65,7 +65,7 @@
       "IteratorAge": {
         "statistic": "Average",
         "operator": "GreaterThanOrEqualToThreshold",
-        "threshold": 2000,
+        "threshold": 30000,
         "period": 60,
         "evaluationPeriods": 3
       }
@@ -74,7 +74,7 @@
       "ApproximateAgeOfOldestMessage": {
         "statistic": "Average",
         "operator": "GreaterThanOrEqualToThreshold",
-        "threshold": 2,
+        "threshold": 600,
         "period": 60,
         "evaluationPeriods": 2
       },

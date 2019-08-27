@@ -4,23 +4,25 @@
     "features": ["enableLogBucket", "createInfraSecondRegion"]
   },
   "core": {
-    "version": "1.1.247",
+    "version": "1.1.256",
     "features": [
       "enableLogBucket",
       "createInfraSecondRegion",
       "httpGateway",
       "enableDLQRetries",
-      "enableLargeSFTPLambdas"
+      "enableLargeSFTPLambdas",
+      "roles"
     ]
   },
   "api": {
-    "version": "1.1.254",
+    "version": "1.1.256",
     "features": [
       "enableLogBucket",
       "readSideDataApi",
       "appSyncCognitoAuth",
       "createInfraSecondRegion",
-      "enableLargeSFTPLambdas"
+      "enableLargeSFTPLambdas",
+      "roles"
     ]
   }
 }

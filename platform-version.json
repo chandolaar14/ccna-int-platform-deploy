@@ -1,28 +1,26 @@
 {
   "storage": {
-    "version": "1.1.257",
+    "version": "1.1.260",
     "features": ["enableLogBucket", "createInfraSecondRegion"]
   },
   "core": {
-    "version": "1.1.258",
+    "version": "1.1.260",
     "features": [
       "enableLogBucket",
       "createInfraSecondRegion",
       "httpGateway",
       "enableDLQRetries",
-      "enableLargeSFTPLambdas",
-      "roles"
+      "enableLargeSFTPLambdas"
     ]
   },
   "api": {
-    "version": "1.1.258",
+    "version": "1.1.260",
     "features": [
       "enableLogBucket",
       "readSideDataApi",
       "appSyncCognitoAuth",
       "createInfraSecondRegion",
-      "enableLargeSFTPLambdas",
-      "roles"
+      "enableLargeSFTPLambdas"
     ]
   }
 }

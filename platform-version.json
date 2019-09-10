@@ -21,7 +21,6 @@
       "enableLogBucket",
       "readSideDataApi",
       "appSyncCognitoAuth",
-      "appSyncCognitoLocalRedirectUrl",
       "createInfraSecondRegion",
       "enableLargeSFTPLambdas",
       "roles",

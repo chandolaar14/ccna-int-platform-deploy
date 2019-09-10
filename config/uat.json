@@ -78,7 +78,8 @@
   "featureFlags": [
     "enableSFTPEndpointSSH",
     "enableHTTPPostLambda",
-    "enableApiGatewayBucket"
+    "enableApiGatewayBucket",
+    "enableApiGateway"
   ],
   "httpGateway": {
     "loadBalancerArn": "arn:aws:elasticloadbalancing:us-west-2:362550720160:loadbalancer/net/ccna-int-http-gateway/3d98a8b22eb87ca4",

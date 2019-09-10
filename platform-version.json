@@ -4,7 +4,7 @@
     "features": ["enableLogBucket", "createInfraSecondRegion"]
   },
   "core": {
-    "version": "1.1.275",
+    "version": "1.1.276",
     "features": [
       "enableLogBucket",
       "createInfraSecondRegion",
@@ -16,7 +16,7 @@
     ]
   },
   "api": {
-    "version": "1.1.275",
+    "version": "1.1.276",
     "features": [
       "enableLogBucket",
       "readSideDataApi",

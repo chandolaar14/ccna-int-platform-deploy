@@ -1,10 +1,10 @@
 {
   "storage": {
-    "version": "1.1.265",
-    "features": ["enableLogBucket", "createInfraSecondRegion"]
+    "version": "1.1.277",
+    "features": ["enableLogBucket", "createInfraSecondRegion", "enableHTTPEndpointIndex"]
   },
   "core": {
-    "version": "1.1.276",
+    "version": "1.1.277",
     "features": [
       "enableLogBucket",
       "createInfraSecondRegion",
@@ -12,11 +12,12 @@
       "enableDLQRetries",
       "enableLargeSFTPLambdas",
       "roles",
-      "integrationCache"
+      "integrationCache",
+      "enableHTTPEndpointIndex"
     ]
   },
   "api": {
-    "version": "1.1.276",
+    "version": "1.1.277",
     "features": [
       "enableLogBucket",
       "readSideDataApi",
@@ -24,7 +25,8 @@
       "createInfraSecondRegion",
       "enableLargeSFTPLambdas",
       "roles",
-      "integrationCache"
+      "integrationCache",
+      "enableJobSync"
     ]
   }
 }

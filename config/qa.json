@@ -64,7 +64,11 @@
     }
   },
   "deployAlertSqs": false,
-  "featureFlags": ["enableSFTPEndpointSSH"],
+  "featureFlags": [
+    "enableSFTPEndpointSSH",
+    "enableHTTPPostLambda",
+    "enableApiGatewayBucket"
+  ],
   "auroraScaling": {
     "autopause": true,
     "minCapacity": 2,

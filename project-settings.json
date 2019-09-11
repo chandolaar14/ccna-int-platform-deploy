@@ -16,9 +16,10 @@
   },
   "auroraScaling": {
     "autopause": true,
-    "minCapacity": 1,
-    "maxCapacity": 2,
-    "secondsUntilAutopause": 7200
+    "minCapacity": 4,
+    "maxCapacity": 8,
+    "secondsUntilAutopause": 7200,
+    "timeoutAction": "ForceApplyCapacityChange"
   },
   "cognitoUserPool": {
     "generate": false

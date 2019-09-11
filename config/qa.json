@@ -71,8 +71,9 @@
   ],
   "auroraScaling": {
     "autopause": true,
-    "minCapacity": 2,
+    "minCapacity": 4,
     "maxCapacity": 8,
-    "secondsUntilAutopause": 7200
+    "secondsUntilAutopause": 7200,
+    "timeoutAction": "ForceApplyCapacityChange"
   }
 }

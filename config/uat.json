@@ -83,6 +83,8 @@
   ],
   "httpGateway": {
     "loadBalancerArn": "arn:aws:elasticloadbalancing:us-west-2:362550720160:loadbalancer/net/ccna-int-http-gateway/3d98a8b22eb87ca4",
-    "loadBalancerDNS": "ccna-int-http-gateway-3d98a8b22eb87ca4.elb.us-west-2.amazonaws.com"
+    "loadBalancerDNS": "ccna-int-http-gateway-3d98a8b22eb87ca4.elb.us-west-2.amazonaws.com",
+    "drLoadBalancerArn": "arn:aws:elasticloadbalancing:us-east-1:362550720160:loadbalancer/net/ccna-int-http-gateway/97759e8c97d836af",
+    "drLoadBalancerDNS": "ccna-int-http-gateway-97759e8c97d836af.elb.us-east-1.amazonaws.com"
   }
 }

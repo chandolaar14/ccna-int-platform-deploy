@@ -67,8 +67,7 @@
   "featureFlags": [
     "enableSFTPEndpointSSH",
     "enableHTTPPostLambda",
-    "enableApiGatewayBucket",
-    "enableApiGateway"
+    "enableApiGatewayBucket"
   ],
   "auroraScaling": {
     "autopause": true,

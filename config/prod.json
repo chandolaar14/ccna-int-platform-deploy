@@ -76,6 +76,12 @@
       "metadataUrl": "https://login.microsoftonline.com/548d26ab-8caa-49e1-97c2-a1b1a06cc39c/federationmetadata/2007-06/federationmetadata.xml?appid=c398e382-e087-41cc-8856-53b65fbb5c61"
     }
   },
+  "httpGateway": {
+    "loadBalancerArn": "arn:aws:elasticloadbalancing:us-west-2:855074921823:loadbalancer/net/ccna-int-http-gateway/8306b8081349c4df",
+    "loadBalancerDNS": "ccna-int-http-gateway-8306b8081349c4df.elb.us-west-2.amazonaws.com",
+    "drLoadBalancerArn": "arn:aws:elasticloadbalancing:us-east-1:855074921823:loadbalancer/net/ccna-int-http-gateway/38297d28f6c0c584",
+    "drLoadBalancerDNS": "ccna-int-http-gateway-38297d28f6c0c584.elb.us-east-1.amazonaws.com"
+  },
   "deployAlertSqs": false,
   "production": true
 }

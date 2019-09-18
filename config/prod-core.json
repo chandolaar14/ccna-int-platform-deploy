@@ -1,5 +1,1 @@
-{
-  "httpGateway": {
-    "loadBalancerArn": "arn:aws:elasticloadbalancing:us-west-2:855074921823:loadbalancer/net/ccna-int-http-gateway/8306b8081349c4df"
-  }
-}
+{}

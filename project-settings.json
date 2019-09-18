@@ -89,7 +89,7 @@
       "NumberOfMessagesSent": {
         "statistic": "Sum",
         "operator": "GreaterThanOrEqualToThreshold",
-        "threshold": 1000,
+        "threshold": 20000,
         "period": 60,
         "evaluationPeriods": 1
       }

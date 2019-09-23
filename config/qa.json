@@ -8,7 +8,13 @@
     "subnetIds": ["subnet-01b22e85645f374f0", "subnet-056b8494453500bdc"],
     "drVpcId": "vpc-0c157dd52ebe5c255",
     "drSubnetIds": ["subnet-0e53ec6e8931f99c0", "subnet-00fc86a519122c0e1"],
-    "ingressCIDRs": ["10.0.0.0/8", "167.105.0.0/16", "151.162.0.0/16", "161.162.0.0/16", "172.28.0.0/16"],
+    "ingressCIDRs": [
+      "10.0.0.0/8",
+      "167.105.0.0/16",
+      "151.162.0.0/16",
+      "161.162.0.0/16",
+      "172.28.0.0/16"
+    ],
     "securityGroups": {
       "vpc": "ccna-int-account-infrastructure-nonprod-vpc",
       "httpGateway": "ccna-int-account-infrastructure-nonprod-http_gateway",
@@ -70,6 +76,12 @@
     "enableApiGatewayBucket",
     "enableApiGateway"
   ],
+  "httpGateway": {
+    "loadBalancerArn": "arn:aws:elasticloadbalancing:us-west-2:362550720160:loadbalancer/net/ccna-int-qa-http-gw-lb/f267bdbe024ce3e6",
+    "loadBalancerDNS": "ccna-int-qa-http-gw-lb-f267bdbe024ce3e6.elb.us-west-2.amazonaws.com",
+    "drLoadBalancerArn": "arn:aws:elasticloadbalancing:us-east-1:362550720160:loadbalancer/net/ccna-int-qa-http-gw-lb/f723a97cae07f835",
+    "drLoadBalancerDNS": "ccna-int-qa-http-gw-lb-f723a97cae07f835.elb.us-east-1.amazonaws.com"
+  },
   "auroraScaling": {
     "autopause": true,
     "minCapacity": 4,

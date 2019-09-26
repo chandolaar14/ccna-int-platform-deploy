@@ -4,8 +4,7 @@
     "features": [
       "enableLogBucket",
       "createInfraSecondRegion",
-      "enableHTTPEndpointIndex",
-      "deliveryThrottling"
+      "enableHTTPEndpointIndex"      
     ]
   },
   "core": {
@@ -18,8 +17,7 @@
       "enableLargeSFTPLambdas",
       "roles",
       "integrationCache",
-      "enableHTTPEndpointIndex",
-      "deliveryThrottling"
+      "enableHTTPEndpointIndex"      
     ]
   },
   "api": {
@@ -33,8 +31,7 @@
       "roles",
       "integrationCache",
       "enableJobSync",
-      "enableHTTPEndpointIndex",
-      "deliveryThrottling"
+      "enableHTTPEndpointIndex"      
     ]
   }
 }

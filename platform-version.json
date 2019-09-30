@@ -17,7 +17,8 @@
       "enableLargeSFTPLambdas",
       "roles",
       "integrationCache",
-      "enableHTTPEndpointIndex"      
+      "enableHTTPEndpointIndex",
+      "enableHTTPGatewayScaling"
     ]
   },
   "api": {
@@ -31,7 +32,7 @@
       "roles",
       "integrationCache",
       "enableJobSync",
-      "enableHTTPEndpointIndex"      
+      "enableHTTPEndpointIndex"
     ]
   }
 }

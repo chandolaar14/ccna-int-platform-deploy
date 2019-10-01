@@ -8,7 +8,7 @@
     ]
   },
   "core": {
-    "version": "1.1.315",
+    "version": "1.1.319",
     "features": [
       "enableLogBucket",
       "createInfraSecondRegion",
@@ -22,7 +22,7 @@
     ]
   },
   "api": {
-    "version": "1.1.315",
+    "version": "1.1.319",
     "features": [
       "enableLogBucket",
       "readSideDataApi",

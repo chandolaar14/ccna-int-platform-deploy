@@ -8,15 +8,9 @@
       "readSideDB": "ccna-int-account-infrastructure-prod-read-side-db"
     },
     "vpcId": "vpc-068d385f57f9d795d",
-    "subnetIds": [
-      "subnet-060a545f83d87780f",
-      "subnet-02637fab495277caf"
-    ],
+    "subnetIds": ["subnet-060a545f83d87780f", "subnet-02637fab495277caf"],
     "drVpcId": "vpc-02ac98270717f1b48",
-    "drSubnetIds": [
-      "subnet-0ad36ceadc132cc7b",
-      "subnet-09f137f1758312741"
-    ],
+    "drSubnetIds": ["subnet-0ad36ceadc132cc7b", "subnet-09f137f1758312741"],
     "ingressCIDRs": [
       "10.0.0.0/8",
       "167.105.0.0/16",
@@ -49,6 +43,7 @@
     "13.89.189.35/32",
     "172.20.10.9/32",
     "24.158.240.0/22",
+    "34.209.36.172/32",
     "40.67.154.203/32",
     "40.67.158.190/32",
     "40.70.42.107/32",

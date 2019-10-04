@@ -82,7 +82,7 @@
       "ApproximateNumberOfMessagesVisible": {
         "statistic": "Average",
         "operator": "GreaterThanOrEqualToThreshold",
-        "threshold": 100,
+        "threshold": 300,
         "period": 60,
         "evaluationPeriods": 2
       },

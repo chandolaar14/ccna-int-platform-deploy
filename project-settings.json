@@ -1,7 +1,7 @@
 {
   "projectName": "ccna-int-ccna",
   "production": false,
-  "featureFlags": ["gatewaySchedulerEvents"],
+  "featureFlags": ["gatewaySchedulerEvents", "enableCloudwatchDetailLogging"],
   "region": "us-west-2",
   "drRegion": "us-east-1",
   "tfState": {
@@ -89,7 +89,7 @@
       "NumberOfMessagesSent": {
         "statistic": "Sum",
         "operator": "GreaterThanOrEqualToThreshold",
-        "threshold": 20000,
+        "threshold": 40000,
         "period": 60,
         "evaluationPeriods": 1
       }

@@ -1,6 +1,6 @@
 {
   "storage": {
-    "version": "1.1.319",
+    "version": "1.1.327",
     "features": [
       "enableLogBucket",
       "createInfraSecondRegion",
@@ -9,7 +9,7 @@
     ]
   },
   "core": {
-    "version": "1.1.319",
+    "version": "1.1.327",
     "features": [
       "enableLogBucket",
       "createInfraSecondRegion",
@@ -24,7 +24,7 @@
     ]
   },
   "api": {
-    "version": "1.1.319",
+    "version": "1.1.327",
     "features": [
       "enableLogBucket",
       "readSideDataApi",

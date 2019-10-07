@@ -78,5 +78,17 @@
     "drLoadBalancerDNS": "ccna-int-http-gateway-38297d28f6c0c584.elb.us-east-1.amazonaws.com"
   },
   "deployAlertSqs": false,
-  "production": true
+  "production": true,
+  "cloudwatchAlarms": {
+    "ccna-int-ccna": {
+      "JobsDelivered": {
+        "statistic": "Sum",
+        "operator": "LessThanThreshold",
+        "threshold": 1,
+        "period": 900,
+        "evaluationPeriods": 1,
+        "treat_missing_data": "breaching"
+      }
+    }
+  }
 }

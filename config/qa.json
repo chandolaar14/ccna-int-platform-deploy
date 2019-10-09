@@ -77,8 +77,7 @@
     "enableApiGatewayBucket",
     "enableApiGateway",
     "enableHTTPGatewayScaling",
-    "deliveryThrottling",
-    "enableS3JobLogs"
+    "deliveryThrottling"
   ],
   "httpGateway": {
     "loadBalancerArn": "arn:aws:elasticloadbalancing:us-west-2:362550720160:loadbalancer/net/ccna-int-qa-http-gw-lb/f267bdbe024ce3e6",

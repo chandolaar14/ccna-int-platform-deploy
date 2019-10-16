@@ -4,8 +4,8 @@ SHELL=/bin/bash
 .SHELLFLAGS = -uec
 .PHONY: default build \
 		storage.tar.gz core.tar.gz api.tar.gz \
-		qa-plan uat-plan prod-plan \
-		qa-deploy uat-deploy prod-deploy \
+		qa-plan uat-plan irm-plan prod-plan \
+		qa-deploy uat-deploy irm-deploy prod-deploy \
         clean
 
 PROJECT_NAME = ccna-int-platform-deploy
@@ -70,6 +70,9 @@ qa-plan:
 uat-plan:
 	$(call go,uat,plan)
 
+irm-plan:
+	$(call go,irm,plan)
+
 prod-plan:
 	$(call go,prod,plan)
 
@@ -79,12 +82,16 @@ qa-deploy:
 uat-deploy:
 	$(call go,uat,deploy)
 
+irm-deploy:
+	$(call go,irm,deploy)
+
 prod-deploy:
 	$(call go,prod,deploy)
 
 verify: build
 	$(call go,qa,plan)
 	$(call go,uat,plan)
+	$(call go,irm,plan)
 
 format:
 	# format json

@@ -1,0 +1,12 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - make irm-plan
+
+artifacts:
+  files:
+    - storage/infrastructure/storage/plan.txt
+    - core/infrastructure/core-primary/plan.txt
+    - api/infrastructure/api-primary/plan.txt

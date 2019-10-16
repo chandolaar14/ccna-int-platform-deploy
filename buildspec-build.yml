@@ -20,6 +20,8 @@ artifacts:
     - buildspec-qa-deploy.yml
     - buildspec-uat-plan.yml
     - buildspec-uat-deploy.yml
+    - buildspec-irm-plan.yml
+    - buildspec-irm-deploy.yml
     - buildspec-prod-plan.yml
     - buildspec-prod-deploy.yml
     - platform-version.json

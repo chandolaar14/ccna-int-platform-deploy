@@ -1,7 +1,11 @@
 {
   "projectName": "ccna-int-ccna",
   "production": false,
-  "featureFlags": ["gatewaySchedulerEvents", "enableCloudwatchDetailLogging"],
+  "featureFlags": [
+    "gatewaySchedulerEvents",
+    "enableCloudwatchDetailLogging",
+    "adHocHolds"
+  ],
   "region": "us-west-2",
   "drRegion": "us-east-1",
   "tfState": {

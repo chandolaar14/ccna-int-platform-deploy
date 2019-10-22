@@ -4,7 +4,8 @@
   "featureFlags": [
     "gatewaySchedulerEvents",
     "enableCloudwatchDetailLogging",
-    "adHocHolds"
+    "adHocHolds",
+    "httpGatewayFailover"
   ],
   "region": "us-west-2",
   "drRegion": "us-east-1",

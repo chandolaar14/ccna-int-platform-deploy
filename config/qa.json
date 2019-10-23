@@ -80,6 +80,8 @@
     "enableHTTPGatewayScaling",
     "deliveryThrottling",
     "enableS3JobLogs",
+    "enableGatewaySchedulerLogs",
+    "enableScheduledDeliveryManagerS3Logs",
     "addSpiceFilenameHttpHeader"
   ],
   "httpGateway": {

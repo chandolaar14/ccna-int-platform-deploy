@@ -1,16 +1,18 @@
 {
   "storage": {
-    "version": "1.1.367",
+    "version": "1.1.368",
     "features": [
       "enableLogBucket",
       "createInfraSecondRegion",
       "enableHTTPEndpointIndex",
       "deliveryThrottling",
-      "enableS3JobLogs"
+      "enableS3JobLogs",
+      "enableGatewaySchedulerLogs",
+      "enableScheduledDeliveryManagerS3Logs"
     ]
   },
   "core": {
-    "version": "1.1.367",
+    "version": "1.1.368",
     "features": [
       "enableLogBucket",
       "createInfraSecondRegion",
@@ -22,11 +24,13 @@
       "enableHTTPEndpointIndex",
       "enableHTTPGatewayScaling",
       "deliveryThrottling",
-      "enableS3JobLogs"
+      "enableS3JobLogs",
+      "enableGatewaySchedulerLogs",
+      "enableScheduledDeliveryManagerS3Logs"
     ]
   },
   "api": {
-    "version": "1.1.367",
+    "version": "1.1.368",
     "features": [
       "enableLogBucket",
       "readSideDataApi",
@@ -38,7 +42,9 @@
       "enableJobSync",
       "enableHTTPEndpointIndex",
       "deliveryThrottling",
-      "enableS3JobLogs"
+      "enableS3JobLogs",
+      "enableGatewaySchedulerLogs",
+      "enableScheduledDeliveryManagerS3Logs"
     ]
   }
 }

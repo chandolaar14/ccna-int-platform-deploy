@@ -82,7 +82,8 @@
     "enableS3JobLogs",
     "enableGatewaySchedulerLogs",
     "enableScheduledDeliveryManagerS3Logs",
-    "addSpiceFilenameHttpHeader"
+    "addSpiceFilenameHttpHeader",
+    "enableMockExternalTestBucket"
   ],
   "httpGateway": {
     "loadBalancerArn": "arn:aws:elasticloadbalancing:us-west-2:362550720160:loadbalancer/net/ccna-int-qa-http-gw-lb/f267bdbe024ce3e6",

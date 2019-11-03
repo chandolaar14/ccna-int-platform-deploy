@@ -31,7 +31,8 @@
   "cloudFront": {
     "generate": true,
     "alternateDomainName": "int.coke.com",
-    "certificateArn": "arn:aws:acm:us-east-1:855074921823:certificate/1e1fe25c-10a5-4b2b-aa4d-cd25bead3941"
+    "certificateArn": "arn:aws:acm:us-east-1:855074921823:certificate/1e1fe25c-10a5-4b2b-aa4d-cd25bead3941",
+    "originResponseLambdaArn": "arn:aws:lambda:us-east-1:855074921823:function:ccna-int-account-infrastructure-prod-edge-lambda:1"
   },
   "auroraScaling": {
     "autopause": false

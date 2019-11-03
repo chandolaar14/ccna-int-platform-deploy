@@ -32,7 +32,8 @@
   "cloudFront": {
     "generate": true,
     "alternateDomainName": "uat.nonprod.int.coke.com",
-    "certificateArn": "arn:aws:acm:us-east-1:362550720160:certificate/6e0871e7-c552-4f43-a2aa-f003780d0608"
+    "certificateArn": "arn:aws:acm:us-east-1:362550720160:certificate/6e0871e7-c552-4f43-a2aa-f003780d0608",
+    "originResponseLambdaArn": "arn:aws:lambda:us-east-1:362550720160:function:ccna-int-account-infrastructure-nonprod-edge-lambda:1"
   },
   "wafIpSet": [
     "161.162.0.0/16",

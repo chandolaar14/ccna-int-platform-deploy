@@ -1,6 +1,10 @@
 {
   "storage": {
+<<<<<<< HEAD
     "version": "1.1.381",
+=======
+    "version": "1.1.379",
+>>>>>>> 8d4b87a697d3e562f898f43a42244e54c157d194
     "features": [
       "enableLogBucket",
       "createInfraSecondRegion",
@@ -13,7 +17,11 @@
     ]
   },
   "core": {
+<<<<<<< HEAD
     "version": "1.1.381",
+=======
+    "version": "1.1.379",
+>>>>>>> 8d4b87a697d3e562f898f43a42244e54c157d194
     "features": [
       "enableLogBucket",
       "createInfraSecondRegion",
@@ -31,7 +39,11 @@
     ]
   },
   "api": {
+<<<<<<< HEAD
     "version": "1.1.381",
+=======
+    "version": "1.1.379",
+>>>>>>> 8d4b87a697d3e562f898f43a42244e54c157d194
     "features": [
       "enableLogBucket",
       "readSideDataApi",

@@ -100,5 +100,6 @@
         "treat_missing_data": "breaching"
       }
     }
-  }
+  },
+  "externalAccessRoleARN": "arn:aws:iam::362550720160:role/ccna-int-external-access-role"
 }

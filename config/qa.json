@@ -83,7 +83,8 @@
     "enableS3JobLogs",
     "enableGatewaySchedulerLogs",
     "enableScheduledDeliveryManagerS3Logs",
-    "addSpiceFilenameHttpHeader"
+    "addSpiceFilenameHttpHeader",
+    "enableMockExternalTestBucket"
   ],
   "httpGateway": {
     "loadBalancerArn": "arn:aws:elasticloadbalancing:us-west-2:362550720160:loadbalancer/net/ccna-int-qa-http-gw-lb/f267bdbe024ce3e6",
@@ -97,5 +98,6 @@
     "maxCapacity": 8,
     "secondsUntilAutopause": 7200,
     "timeoutAction": "ForceApplyCapacityChange"
-  }
+  },
+  "externalAccessRoleARN": "arn:aws:iam::362550720160:role/ccna-int-external-access-role"
 }

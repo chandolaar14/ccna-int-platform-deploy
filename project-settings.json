@@ -1,12 +1,6 @@
 {
   "projectName": "ccna-int-ccna",
   "production": false,
-  "emailDomain": "nonprod.int.coke.com",
-  "emailDomainZoneId": "Z1AHFRABEWGSQQ",
-  "mailBucketName": "mail.nonprod.ccna-int.ccna.info",
-  "mailBucketNameDr": "dr.mail.nonprod.ccna-int.ccna.info",
-  "mailRuleSetName": "primary-rules",
-  "mailRuleSetNameDr": "primary-rules_dr",
   "featureFlags": [
     "gatewaySchedulerEvents",
     "enableCloudwatchDetailLogging",

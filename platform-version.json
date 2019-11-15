@@ -27,7 +27,8 @@
       "deliveryThrottling",
       "enableS3JobLogs",
       "enableGatewaySchedulerLogs",
-      "enableScheduledDeliveryManagerS3Logs"
+      "enableScheduledDeliveryManagerS3Logs",
+      "httpGatewayExternal"
     ]
   },
   "api": {

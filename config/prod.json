@@ -79,6 +79,15 @@
     "drLoadBalancerArn": "arn:aws:elasticloadbalancing:us-east-1:855074921823:loadbalancer/net/ccna-int-http-gateway/38297d28f6c0c584",
     "drLoadBalancerDNS": "ccna-int-http-gateway-38297d28f6c0c584.elb.us-east-1.amazonaws.com"
   },
+  "httpGatewayExternal": {
+    "loadBalancerArn": "arn:aws:elasticloadbalancing:us-west-2:855074921823:loadbalancer/app/ccna-int-http-gateway-ext/51c26abef36eb4d9",
+    "loadBalancerDNS": "ccna-int-http-gateway-ext-539058378.us-west-2.elb.amazonaws.com",
+    "drLoadBalancerArn": "arn:aws:elasticloadbalancing:us-east-1:855074921823:loadbalancer/app/ccna-int-http-gateway-ext/e299014e8bb2d2f1",
+    "drLoadBalancerDNS": "ccna-int-http-gateway-ext-410781539.us-east-1.elb.amazonaws.com",
+    "globalLoadBalancerDNS": "http-gateway-ext.int.coke.com",
+    "certificateArn": "arn:aws:acm:us-west-2:855074921823:certificate/2cbcda39-e278-46ce-a416-081cc70f29fa",
+    "drCertificateArn": "arn:aws:acm:us-east-1:855074921823:certificate/25eb76a5-4ae8-49a8-aeef-b1319fc50448"
+  },
   "deployAlertSqs": false,
   "production": true,
   "cloudwatchAlarms": {

@@ -89,6 +89,15 @@
     "drLoadBalancerArn": "arn:aws:elasticloadbalancing:us-east-1:362550720160:loadbalancer/net/ccna-int-http-gateway/97759e8c97d836af",
     "drLoadBalancerDNS": "ccna-int-http-gateway-97759e8c97d836af.elb.us-east-1.amazonaws.com"
   },
+  "httpGatewayExternal": {
+    "loadBalancerArn": "arn:aws:elasticloadbalancing:us-west-2:362550720160:loadbalancer/app/ccna-int-http-gateway-ext/4f207e6d2d081fe0",
+    "loadBalancerDNS": "ccna-int-http-gateway-ext-714146985.us-west-2.elb.amazonaws.com",
+    "drLoadBalancerArn": "arn:aws:elasticloadbalancing:us-east-1:362550720160:loadbalancer/app/ccna-int-http-gateway-ext/18452b9e74282e74",
+    "drLoadBalancerDNS": "ccna-int-http-gateway-ext-2086542311.us-east-1.elb.amazonaws.com",
+    "globalLoadBalancerDNS": "http-gateway-ext.nonprod.int.coke.com",
+    "certificateArn": "arn:aws:acm:us-west-2:362550720160:certificate/88f8ea40-a80c-4703-aea2-cd2f678470fb",
+    "drCertificateArn": "arn:aws:acm:us-east-1:362550720160:certificate/07a37a66-9140-47c6-8abd-44cd52288d15"
+  },
   "cloudwatchAlarms": {
     "ccna-int-ccna": {
       "JobsDelivered": {

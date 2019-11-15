@@ -92,6 +92,15 @@
     "drLoadBalancerArn": "arn:aws:elasticloadbalancing:us-east-1:362550720160:loadbalancer/net/ccna-int-qa-http-gw-lb/f723a97cae07f835",
     "drLoadBalancerDNS": "ccna-int-qa-http-gw-lb-f723a97cae07f835.elb.us-east-1.amazonaws.com"
   },
+  "httpGatewayExternal": {
+    "loadBalancerArn": "arn:aws:elasticloadbalancing:us-west-2:362550720160:loadbalancer/app/ccna-int-qa-http-gw-lb-ext/841b49636bbf3402",
+    "loadBalancerDNS": "ccna-int-qa-http-gw-lb-ext-1178150882.us-west-2.elb.amazonaws.com",
+    "drLoadBalancerArn": "arn:aws:elasticloadbalancing:us-east-1:362550720160:loadbalancer/app/ccna-int-qa-http-gw-lb-ext/72a6b35f06131998",
+    "drLoadBalancerDNS": "ccna-int-qa-http-gw-lb-ext-1316900207.us-east-1.elb.amazonaws.com",
+    "globalLoadBalancerDNS": "http-gateway-ext-qa.nonprod.int.coke.com",
+    "certificateArn": "arn:aws:acm:us-west-2:362550720160:certificate/b164c398-3bee-4165-b5b2-c6043953097f",
+    "drCertificateArn": "arn:aws:acm:us-east-1:362550720160:certificate/21559626-1c8b-434c-b43b-7f01f6fe4b37"
+  },
   "auroraScaling": {
     "autopause": true,
     "minCapacity": 4,

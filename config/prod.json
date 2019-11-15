@@ -93,5 +93,10 @@
       }
     }
   },
-  "externalAccessRoleARN": "arn:aws:iam::855074921823:role/ccna-int-external-access-role"
+  "externalAccessRoleARN": "arn:aws:iam::855074921823:role/ccna-int-external-access-role",
+  "awsBackup": {
+    "primaryBackupSchedule": "cron(42 * * * ? *)",
+    "drBackupSchedule": "cron(12 * * * ? *)",
+    "backupRetentionDays": 1
+  }
 }

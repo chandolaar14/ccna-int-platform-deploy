@@ -7,6 +7,8 @@
   "mailBucketNameDr": "dr.mail.nonprod.ccna-int.ccna.info",
   "mailRuleSetName": "primary-rules",
   "mailRuleSetNameDr": "primary-rules_dr",
+  "maxJobsBeingDelivered": 100,
+  "maxJobsOnHoldPastDeliveryDate": 1,
   "featureFlags": [
     "gatewaySchedulerEvents",
     "enableCloudwatchDetailLogging",

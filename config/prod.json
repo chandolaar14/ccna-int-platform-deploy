@@ -90,6 +90,12 @@
   },
   "deployAlertSqs": false,
   "production": true,
+  "emailDomain": "int.coke.com",
+  "emailDomainZoneId": "Z1F5W1I9DP43S8",
+  "mailBucketName": "mail.prod.ccna-int.ccna.info",
+  "mailBucketNameDr": "dr.mail.prod.ccna-int.ccna.info",
+  "mailRuleSetName": "primary-rules",
+  "mailRuleSetNameDr": "primary-rules_dr",
   "cloudwatchAlarms": {
     "ccna-int-ccna": {
       "JobsDelivered": {

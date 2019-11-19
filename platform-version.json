@@ -10,8 +10,7 @@
       "enableGatewaySchedulerLogs",
       "enableScheduledDeliveryManagerS3Logs",
       "enableAWSBackup",
-      "enableEmailGateway",
-      "enableJobMonitoring"
+      "enableEmailGateway"      
     ]
   },
   "core": {
@@ -31,8 +30,7 @@
       "enableGatewaySchedulerLogs",
       "enableScheduledDeliveryManagerS3Logs",
       "httpGatewayExternal",
-      "enableEmailGateway",
-      "enableJobMonitoring"
+      "enableEmailGateway"      
     ]
   },
   "api": {
@@ -51,8 +49,7 @@
       "enableS3JobLogs",
       "enableGatewaySchedulerLogs",
       "enableScheduledDeliveryManagerS3Logs",
-      "enableEmailGateway",
-      "enableJobMonitoring"
+      "enableEmailGateway"      
     ]
   }
 }

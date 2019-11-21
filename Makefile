@@ -53,6 +53,21 @@ define go
 	$(call exec,$2)
 endef
 
+define deploy-storage
+	$(call unzip,storage)
+	$(call create-setting,$1,storage)
+	${SUB_MAKE} storage deploy-storage
+endef
+
+define deploy-region
+	$(call unzip,core)
+	$(call unzip,api)
+	$(call create-setting,$1,core)
+	$(call create-setting,$1,api)
+	${SUB_MAKE} core deploy-core-$2
+	${SUB_MAKE} api deploy-api-$2
+endef
+
 build: storage.tar.gz core.tar.gz api.tar.gz
 
 storage.tar.gz: platform-version.json
@@ -78,6 +93,34 @@ prod-plan:
 
 qa-deploy:
 	$(call go,qa,deploy)
+
+qa-deploy-storage:
+	$(call deploy-storage,qa)
+
+qa-deploy-secondary:
+	$(call deploy-region,qa,secondary)
+
+qa-deploy-primary:
+	$(call deploy-region,qa,primary)
+
+uat-deploy-storage:
+	$(call deploy-storage,uat)
+
+uat-deploy-secondary:
+	$(call deploy-region,uat,secondary)
+
+uat-deploy-primary:
+	$(call deploy-region,uat,primary)
+
+prod-deploy-storage:
+	$(call deploy-storage,prod)
+
+prod-deploy-secondary:
+	$(call deploy-region,prod,secondary)
+
+prod-deploy-primary:
+	$(call deploy-region,prod,primary)
+
 
 uat-deploy:
 	$(call go,uat,deploy)

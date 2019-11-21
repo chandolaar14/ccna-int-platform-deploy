@@ -90,10 +90,7 @@
     "loadBalancerArn": "arn:aws:elasticloadbalancing:us-west-2:362550720160:loadbalancer/net/ccna-int-qa-http-gw-lb/f267bdbe024ce3e6",
     "loadBalancerDNS": "ccna-int-qa-http-gw-lb-f267bdbe024ce3e6.elb.us-west-2.amazonaws.com",
     "drLoadBalancerArn": "arn:aws:elasticloadbalancing:us-east-1:362550720160:loadbalancer/net/ccna-int-qa-http-gw-lb/f723a97cae07f835",
-    "drLoadBalancerDNS": "ccna-int-qa-http-gw-lb-f723a97cae07f835.elb.us-east-1.amazonaws.com",
-    "globalLoadBalancerDNS": "http-gateway-qa.nonprod.int.coke.com",
-    "certificateArn": "arn:aws:acm:us-west-2:362550720160:certificate/74117a83-4ab8-42e8-abe5-f7e9990381c6",
-    "drCertificateArn": "arn:aws:acm:us-east-1:362550720160:certificate/93829336-99dc-41a8-a037-50fcb726f049"
+    "drLoadBalancerDNS": "ccna-int-qa-http-gw-lb-f723a97cae07f835.elb.us-east-1.amazonaws.com"
   },
   "httpGatewayExternal": {
     "loadBalancerArn": "arn:aws:elasticloadbalancing:us-west-2:362550720160:loadbalancer/app/ccna-int-qa-http-gw-lb-ext/841b49636bbf3402",

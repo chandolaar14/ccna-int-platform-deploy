@@ -110,6 +110,15 @@
         "period": 900,
         "evaluationPeriods": 1,
         "treat_missing_data": "breaching"
+      },
+      "JobsFailed": {
+        "statistic": "Sum",
+        "operator": "GreaterThanOrEqualToThreshold",
+        "threshold": 15,
+        "period": 600,
+        "evaluationPeriods": 1,
+        "treat_missing_data": "notBreaching",
+        "extraAlertTopics": ["job"]
       }
     }
   },

@@ -1,6 +1,6 @@
 {
   "storage": {
-    "version": "1.1.411",
+    "version": "1.1.412",
     "features": [
       "enableLogBucket",
       "createInfraSecondRegion",
@@ -10,11 +10,11 @@
       "enableGatewaySchedulerLogs",
       "enableScheduledDeliveryManagerS3Logs",
       "enableAWSBackup",
-      "enableEmailGateway"      
+      "enableEmailGateway"
     ]
   },
   "core": {
-    "version": "1.1.411",
+    "version": "1.1.412",
     "features": [
       "enableLogBucket",
       "createInfraSecondRegion",
@@ -30,11 +30,11 @@
       "enableGatewaySchedulerLogs",
       "enableScheduledDeliveryManagerS3Logs",
       "httpGatewayExternal",
-      "enableEmailGateway"      
+      "enableEmailGateway"
     ]
   },
   "api": {
-    "version": "1.1.411",
+    "version": "1.1.412",
     "features": [
       "enableLogBucket",
       "readSideDataApi",
@@ -49,7 +49,7 @@
       "enableS3JobLogs",
       "enableGatewaySchedulerLogs",
       "enableScheduledDeliveryManagerS3Logs",
-      "enableEmailGateway"      
+      "enableEmailGateway"
     ]
   }
 }

@@ -10,7 +10,8 @@
       "enableGatewaySchedulerLogs",
       "enableScheduledDeliveryManagerS3Logs",
       "enableAWSBackup",
-      "enableEmailGateway"
+      "enableEmailGateway",
+      "dynamoTransition"
     ]
   },
   "core": {
@@ -30,7 +31,8 @@
       "enableGatewaySchedulerLogs",
       "enableScheduledDeliveryManagerS3Logs",
       "httpGatewayExternal",
-      "enableEmailGateway"
+      "enableEmailGateway",
+      "dynamoTransition"
     ]
   },
   "api": {
@@ -49,7 +51,8 @@
       "enableS3JobLogs",
       "enableGatewaySchedulerLogs",
       "enableScheduledDeliveryManagerS3Logs",
-      "enableEmailGateway"
+      "enableEmailGateway",
+      "dynamoTransition"
     ]
   }
 }

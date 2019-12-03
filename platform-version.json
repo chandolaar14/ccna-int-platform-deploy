@@ -10,12 +10,11 @@
       "enableGatewaySchedulerLogs",
       "enableScheduledDeliveryManagerS3Logs",
       "enableAWSBackup",
-      "enableEmailGateway",
-      "dynamoTransition"
+      "enableEmailGateway"
     ]
   },
   "core": {
-    "version": "1.1.418",
+    "version": "1.1.423",
     "features": [
       "enableLogBucket",
       "createInfraSecondRegion",
@@ -36,7 +35,7 @@
     ]
   },
   "api": {
-    "version": "1.1.418",
+    "version": "1.1.423",
     "features": [
       "enableLogBucket",
       "readSideDataApi",
@@ -51,8 +50,7 @@
       "enableS3JobLogs",
       "enableGatewaySchedulerLogs",
       "enableScheduledDeliveryManagerS3Logs",
-      "enableEmailGateway",
-      "dynamoTransition"
+      "enableEmailGateway"
     ]
   }
 }

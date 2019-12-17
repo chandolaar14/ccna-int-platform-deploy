@@ -118,10 +118,5 @@
     "primaryBackupSchedule": "cron(42 3 * * ? *)",
     "drBackupSchedule": "cron(12 3 * * ? *)",
     "backupRetentionDays": 1
-  },
-  "ttlExpirationDays": {
-    "default": 45,
-    "adHocHold": 45,
-    "job": 1
   }
 }

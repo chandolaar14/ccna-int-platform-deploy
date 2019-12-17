@@ -105,5 +105,10 @@
         "evaluationPeriods": 1
       }
     }
+  },
+  "ttlExpirationDays": {
+    "default": 45,
+    "adHocHold": 45,
+    "job": 45
   }
 }

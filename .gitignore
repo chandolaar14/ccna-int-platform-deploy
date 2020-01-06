@@ -3,3 +3,4 @@ core
 storage
 *.tar.gz
 .idea
+settings.json

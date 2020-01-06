@@ -109,6 +109,9 @@
   "ttlExpirationDays": {
     "default": 45,
     "adHocHold": 45,
-    "job": 45
+    "job": 45,
+    "log": 45,
+    "delivery": 45,
+    "lock": 45
   }
 }

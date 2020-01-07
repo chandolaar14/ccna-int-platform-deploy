@@ -85,8 +85,6 @@
     "enableScheduledDeliveryManagerS3Logs",
     "addSpiceFilenameHttpHeader",
     "enableMockExternalTestBucket",
-    "createTTLOnOperationsTable",
-    "enableTTLOnOperationsTable",
     "enableS3Gateway"
   ],
   "httpGateway": {

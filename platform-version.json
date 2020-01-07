@@ -2,56 +2,62 @@
   "storage": {
     "version": "1.1.460",
     "features": [
-      "enableLogBucket",
       "createInfraSecondRegion",
-      "enableHTTPEndpointIndex",
+      "createTTLOnOperationsTable",
       "deliveryThrottling",
-      "enableS3JobLogs",
-      "enableGatewaySchedulerLogs",
-      "enableScheduledDeliveryManagerS3Logs",
       "enableAWSBackup",
-      "enableEmailGateway"
+      "enableEmailGateway",
+      "enableGatewaySchedulerLogs",
+      "enableHTTPEndpointIndex",
+      "enableLogBucket",
+      "enableS3JobLogs",
+      "enableScheduledDeliveryManagerS3Logs",
+      "enableTTLOnOperationsTable"
     ]
   },
   "core": {
     "version": "1.1.460",
     "features": [
-      "enableLogBucket",
       "createInfraSecondRegion",
-      "httpGateway",
+      "createTTLOnOperationsTable",
+      "deliveryThrottling",
+      "dynamoExpiration",
+      "dynamoTransition",
       "enableDLQRetries",
-      "enableLargeSFTPLambdas",
-      "roles",
-      "integrationCache",
+      "enableEmailGateway",
+      "enableGatewaySchedulerLogs",
       "enableHTTPEndpointIndex",
       "enableHTTPGatewayScaling",
-      "deliveryThrottling",
+      "enableLargeSFTPLambdas",
+      "enableLogBucket",
       "enableS3JobLogs",
-      "enableGatewaySchedulerLogs",
       "enableScheduledDeliveryManagerS3Logs",
+      "enableTTLOnOperationsTable",
+      "httpGateway",
       "httpGatewayExternal",
-      "enableEmailGateway",
-      "dynamoTransition",
-      "dynamoExpiration"
+      "integrationCache",
+      "roles"
     ]
   },
   "api": {
     "version": "1.1.460",
     "features": [
-      "enableLogBucket",
-      "readSideDataApi",
       "appSyncCognitoAuth",
       "createInfraSecondRegion",
-      "enableLargeSFTPLambdas",
-      "roles",
-      "integrationCache",
-      "enableJobSync",
-      "enableHTTPEndpointIndex",
+      "createTTLOnOperationsTable",
       "deliveryThrottling",
-      "enableS3JobLogs",
+      "enableEmailGateway",
       "enableGatewaySchedulerLogs",
+      "enableHTTPEndpointIndex",
+      "enableJobSync",
+      "enableLargeSFTPLambdas",
+      "enableLogBucket",
+      "enableS3JobLogs",
       "enableScheduledDeliveryManagerS3Logs",
-      "enableEmailGateway"
+      "enableTTLOnOperationsTable",
+      "integrationCache",
+      "readSideDataApi",
+      "roles"
     ]
   }
 }

@@ -113,5 +113,6 @@
     "log": 45,
     "delivery": 45,
     "lock": 45
-  }
+  },
+  "jobMonitoringScheduleExpression": "rate(15 minutes)"
 }

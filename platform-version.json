@@ -37,7 +37,8 @@
       "httpGateway",
       "httpGatewayExternal",
       "integrationCache",
-      "roles"
+      "roles",
+      "enableS3Gateway"
     ]
   },
   "api": {
@@ -59,7 +60,8 @@
       "enableTTLOnOperationsTable",
       "integrationCache",
       "readSideDataApi",
-      "roles"
+      "roles",
+      "enableS3Gateway"
     ]
   }
 }

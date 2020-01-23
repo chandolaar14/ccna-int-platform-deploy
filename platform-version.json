@@ -38,7 +38,8 @@
       "httpGatewayExternal",
       "integrationCache",
       "roles",
-      "enableS3Gateway"
+      "enableS3Gateway",
+      "enableBatchDeliveries"
     ]
   },
   "api": {
@@ -61,7 +62,8 @@
       "integrationCache",
       "readSideDataApi",
       "roles",
-      "enableS3Gateway"
+      "enableS3Gateway",
+      "enableBatchDeliveries"
     ]
   }
 }

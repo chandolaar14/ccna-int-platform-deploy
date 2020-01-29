@@ -22,7 +22,6 @@
       "createTTLOnOperationsTable",
       "deliveryThrottling",
       "dynamoExpiration",
-      "dynamoTransition",
       "ecsComponents",
       "enableDLQRetries",
       "enableEmailGateway",

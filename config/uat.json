@@ -121,6 +121,14 @@
         "evaluationPeriods": 1,
         "treat_missing_data": "notBreaching",
         "extraAlertTopics": ["job"]
+      },
+      "JobGatewayFileAge": {
+        "statistic": "Maximum",
+        "operator": "GreaterThanThreshold",
+        "threshold": 900000,
+        "period": 60,
+        "evaluationPeriods": 3,
+        "treat_missing_data": "notBreaching"
       }
     }
   },

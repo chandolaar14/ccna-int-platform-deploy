@@ -121,11 +121,11 @@
         "extraAlertTopics": ["job"]
       },
       "JobGatewayFileAge": {
-        "statistic": "Maximum",
+        "statistic": "Average",
         "operator": "GreaterThanThreshold",
-        "threshold": 900000,
-        "period": 60,
-        "evaluationPeriods": 3,
+        "threshold": 1200000,
+        "period": 3600,
+        "evaluationPeriods": 1,
         "treat_missing_data": "notBreaching"
       }
     }

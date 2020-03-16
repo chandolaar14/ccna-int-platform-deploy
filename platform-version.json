@@ -21,7 +21,6 @@
       "createInfraSecondRegion",
       "createTTLOnOperationsTable",
       "deliveryThrottling",
-      "dynamoExpiration",
       "ecsComponents",
       "enableDLQRetries",
       "enableEmailGateway",

@@ -82,6 +82,30 @@
         "evaluationPeriods": 3
       }
     },
+    "AWS/LambdaApi": {
+      "Errors": {
+        "statistic": "Sum",
+        "operator": "GreaterThanOrEqualToThreshold",
+        "threshold": 5,
+        "period": 60,
+        "evaluationPeriods": 1
+      },
+      "Throttles": {
+        "statistic": "Sum",
+        "operator": "GreaterThanOrEqualToThreshold",
+        "threshold": 1,
+        "period": 60,
+        "evaluationPeriods": 1
+      },
+      "IteratorAge": {
+        "statistic": "Average",
+        "operator": "GreaterThanOrEqualToThreshold",
+        "threshold": 30000,
+        "period": 60,
+        "evaluationPeriods": 3,
+        "treat_missing_data": "notBreaching"
+      }
+    },
     "AWS/SQS": {
       "ApproximateAgeOfOldestMessage": {
         "statistic": "Average",

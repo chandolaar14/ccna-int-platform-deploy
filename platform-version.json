@@ -1,6 +1,6 @@
 {
   "storage": {
-    "version": "1.1.581",
+    "version": "1.1.582",
     "features": [
       "createInfraSecondRegion",
       "createTTLOnOperationsTable",
@@ -16,7 +16,7 @@
     ]
   },
   "core": {
-    "version": "1.1.581",
+    "version": "1.1.582",
     "features": [
       "createInfraSecondRegion",
       "createTTLOnOperationsTable",
@@ -42,7 +42,7 @@
     ]
   },
   "api": {
-    "version": "1.1.581",
+    "version": "1.1.582",
     "features": [
       "appSyncCognitoAuth",
       "createInfraSecondRegion",

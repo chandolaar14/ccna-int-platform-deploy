@@ -38,8 +38,7 @@
       "roles",
       "enableS3Gateway",
       "enableBatchDeliveries",
-      "enableExtraLargeSFTPDelivery",
-      "enableExtraLargeSFTPGatewayFileUpload"
+      "enableExtraLargeSFTPDelivery"
     ]
   },
   "api": {

@@ -1,6 +1,6 @@
 {
   "storage": {
-    "version": "1.1.661",
+    "version": "1.1.662",
     "features": [
       "createInfraSecondRegion",
       "createTTLOnOperationsTable",
@@ -16,7 +16,7 @@
     ]
   },
   "core": {
-    "version": "1.1.661",
+    "version": "1.1.662",
     "features": [
       "createInfraSecondRegion",
       "createTTLOnOperationsTable",
@@ -38,11 +38,12 @@
       "roles",
       "enableS3Gateway",
       "enableBatchDeliveries",
-      "enableExtraLargeSFTPDelivery"
+      "enableExtraLargeSFTPDelivery",
+      "enableExtraLargeSFTPGatewayFileUpload"
     ]
   },
   "api": {
-    "version": "1.1.661",
+    "version": "1.1.662",
     "features": [
       "appSyncCognitoAuth",
       "createInfraSecondRegion",
